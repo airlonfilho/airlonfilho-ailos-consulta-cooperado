@@ -1,0 +1,14 @@
+<aside class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo">
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li *ngFor="let item of menuItems" class="nav-item" title="{{ item.tooltip }}">
+          <a href="#" class="nav-link">
+            <span class="icon">{{ item.icon }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>

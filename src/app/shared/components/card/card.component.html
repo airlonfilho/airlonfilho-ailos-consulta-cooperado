@@ -1,0 +1,28 @@
+<div class="cpf-result-container" *ngIf="cooperado">
+    <div class="result-header">
+        <h3>Situação cadastral do CPF</h3>
+        <p class="subtitle">Consulta na Receita Federal</p>
+    </div>
+
+    <div class="result-content">
+        <div class="result-item">
+            <div class="result-icon">
+                <i class="user-icon">👤</i>
+            </div>
+            <div class="result-info">
+                <span class="info-label">Nome</span>
+                <span class="info-value">{{ cooperado.nome }}</span>
+            </div>
+        </div>
+
+        <div class="result-item">
+            <div class="result-icon">
+                <i class="check-icon">✓</i>
+            </div>
+            <div class="result-info">
+                <span class="info-label">Situação do CPF</span>
+                <span class="info-value">{{ cooperado.situacao }}</span>
+            </div>
+        </div>
+    </div>
+</div>

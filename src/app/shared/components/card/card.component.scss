@@ -1,0 +1,68 @@
+.cpf-result-container {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin-top: 30px;
+}
+
+.result-header {
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 5px 0;
+        color: #333;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+    }
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.result-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #333;
+}
+
+.check-icon {
+    color: green;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}

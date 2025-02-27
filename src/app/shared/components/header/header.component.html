@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <h1 class="title title-exo">{{ title }}</h1>
+        <div class="breadcrumbs">
+          <span *ngFor="let crumb of breadcrumbs; let last = last">
+            {{ crumb }}
+            <span *ngIf="!last"> / </span>
+          </span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="notification">
+          <i class="notification-icon">🔔</i>
+          <span class="notification-badge">{{ notificationCount }}</span>
+        </div>
+        <button class="viacredi-button">VIACREDI</button>
+        <div class="user-avatar">
+          <img src="assets/images/user-avatar.jpg" alt="User Avatar">
+        </div>
+      </div>
+    </div>
+  </header>

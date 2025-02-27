@@ -1,0 +1,31 @@
+<div class="overlay" *ngIf="isOpen" (click)="toggleSidebar()"></div>
+<div class="sidebar" [ngClass]="{'open': isOpen}">
+  <div class="content">
+    <h2>Check-list para
+      abertura da conta</h2>
+    <p>Confira algumas dicas que irão lhe ajudar neste atendimento para que a admissão aconteça da melhor forma
+      possível.</p>
+
+    <div class="checkbox-container" *ngFor="let option of options; let i = index">
+      <div class="checkbox">
+        <input type="checkbox" id="{{ option.value }}" [(ngModel)]="option.checked" class="custom-checkbox" />
+        <label for="{{ option.value }}">{{ option.name }}</label>
+      </div>
+
+      <div class="list" *ngIf="option.checked">
+        <ul>
+          <li *ngFor="let item of items[i]">
+            <span> • {{ item }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button class="secondary-button" (click)="toggleSidebar()">
+        Continuar atendimento
+      </button>
+    </div>
+
+  </div>
+</div>
