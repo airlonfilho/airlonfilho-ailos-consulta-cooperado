@@ -33,8 +33,7 @@ import { ErrorComponent } from './shared/components/error/error.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-    
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

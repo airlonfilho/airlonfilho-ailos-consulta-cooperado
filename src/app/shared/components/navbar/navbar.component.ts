@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   menuItems = [
-    { icon: '≡', tooltip: 'Menu' },
-    { icon: '🔍', tooltip: 'Buscar' },
-    { icon: '★', tooltip: 'Favoritos' },
-    { icon: '💬', tooltip: 'Mensagens' },
-    { icon: '📊', tooltip: 'Relatórios' },
-    { icon: '🏛️', tooltip: 'Instituição' }
+    { icon: 'fa-solid fa-bars', tooltip: 'Menu' },
+    { icon: 'fa-solid fa-magnifying-glass', tooltip: 'Buscar' },
+    { icon: 'fa-solid fa-star', tooltip: 'Favoritos' },
+    { icon: 'fa-solid fa-comment', tooltip: 'Mensagens' },
+    { icon: 'fa-solid fa-chart-simple', tooltip: 'Relatórios' },
+    { icon: 'fa-solid fa-building-columns', tooltip: 'Instituição' }
   ];
 
   constructor() { }
